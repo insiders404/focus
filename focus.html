@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#input").focus(function(){
+        $(this).css("background-color","red");
+      });
+      $("#input").blur(function(){
+        $(this).css("background-color","white");
+      });
+    });
+  </script>
+</head>
+<body>
+  <input type='text' id="input" placeholder="click me to focus">
+</body>
+</html>
